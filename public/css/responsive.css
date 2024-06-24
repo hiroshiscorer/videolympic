@@ -1,0 +1,241 @@
+/* BOOTSTRAP XS */
+@media all and (min-width: 0px) and (max-width: 575px) {
+    h1 {
+        font-size: 40px;
+    }
+    .color-coded li {
+        gap: 15px;
+        padding-left: 150px;
+        padding-right: 15px;
+        min-height: 100px;
+    }
+    .color-coded li img {
+        left: 15px;
+        top: -10px;
+        width: 120px;
+    }
+    .color-coded li p img {
+        height: 100px;
+        right: 20px;
+        width: 100px;
+    }
+    .color-coded p {
+        font-size: 30px;
+        height: 100px;
+    }
+    .color-coded p::before {
+        left: -25px;
+    }
+    #standings-table li p:last-child strong {
+        min-width: 50px;
+    }
+    .color-coded span {
+        font-size: 20px;
+    }
+    #single-game-title h2 {
+        font-size: 30px;
+        height: 100px;
+    }
+    .result-list li p.evento-resultado {
+        font-size: 30px;
+    }
+    .result-list li p.evento-score::before {
+        left: -10px;
+    }
+    .home-option-info h3 {
+        font-size: 25px !important;
+    }
+    .home-option-info p, .home-option-info ul {
+        font-size: 20px;
+    }
+    .color-coded a {
+        font-size: 14px;
+        flex-basis: 130px;
+    }
+    #editar-resultados-list {
+        font-size: 14px;
+    }
+    #editar-resultados-list li {
+        gap: 5px;
+    }
+    #editar-resultados-list li form button {
+        margin-top: 5px;
+    }
+    #editar-resultados-list li form button.delete {
+        font-size: 20px;
+        margin: 0;
+        height: 40px;
+        width: 40px;
+    }
+}
+
+/* BOOTSTRAP SM */
+@media all and (min-width: 576px) and (max-width: 767px) {
+    h1 {
+        font-size: 40px;
+    }
+    .color-coded li {
+        gap: 15px;
+        padding-left: 185px;
+        padding-right: 15px;
+        min-height: 100px;
+    }
+    .color-coded li img {
+        left: 15px;
+        top: -10px;
+        width: 120px;
+    }
+    .color-coded li p img {
+        height: 100px;
+        right: 20px;
+        width: 100px;
+    }
+    .color-coded p {
+        font-size: 30px;
+        height: 100px;
+    }
+    #standings-table li p:last-child strong {
+        min-width: 50px;
+    }
+    .color-coded span {
+        font-size: 20px;
+    }
+    #single-game-title h2 {
+        font-size: 30px;
+        height: 100px;
+    }
+    .result-list li p.evento-resultado {
+        font-size: 30px;
+    }
+    .result-list li p.evento-score::before {
+        left: -10px;
+    }
+    .home-option-info h3 {
+        font-size: 25px !important;
+    }
+    .home-option-info p, .home-option-info ul {
+        font-size: 20px;
+    }
+    .color-coded a {
+        font-size: 14px;
+        flex-basis: 130px;
+    }
+    #editar-resultados-list {
+        font-size: 14px;
+    }
+    #editar-resultados-list li {
+        gap: 5px;
+    }
+    #editar-resultados-list li form button {
+        margin-top: 5px;
+    }
+    #editar-resultados-list li form button.delete {
+        font-size: 20px;
+        margin: 0;
+        height: 40px;
+        width: 40px;
+    }
+
+}
+
+/* BOOTSTAP MD */
+@media all and (min-width: 768px) and (max-width: 991px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    .color-coded p {
+        font-size: 30px;
+    }
+
+    .color-coded span {
+        font-size: 20px;
+    }
+
+    .home-option-info h3 {
+        font-size: 30px;
+    }
+    .home-option-info p, .home-option-info ul {
+        font-size: 20px;
+    }
+    .color-coded a {
+        font-size: 14px;
+        flex-basis: 130px;
+    }
+    #editar-resultados-list {
+        font-size: 16px;
+    }
+    #editar-resultados-list li form button {
+        margin-top: 5px;
+    }
+
+}
+
+/* BOOTSTAP LG */
+@media all and (min-width: 992px) and (max-width: 1199px) {
+    h1 {
+        font-size: 60px;
+    }
+
+    .color-coded p {
+        font-size: 50px;
+    }
+
+    .color-coded span {
+        font-size: 25px;
+    }
+
+    .home-option-info h3 {
+        font-size: 50px;
+    }
+    .home-option-info p, .home-option-info ul {
+        font-size: 20px;
+    }
+    #editar-resultados-list li form button {
+        margin-top: 5px;
+    }
+}
+
+/* ============= EXTRA QUERIES ============= */
+
+/* 0-991 */
+@media all and (min-width: 0px) and (max-width: 991px) {
+    h1 {
+        flex-direction: column;
+        font-size: 60px;
+    }
+}
+
+/* 0-767 */
+@media all and (min-width: 0px) and (max-width: 767px) {
+    .home-option-info h3 {
+        font-size: 30px;
+    }
+
+    .home-option-info p, .home-option-info ul {
+        font-size: 20px;
+    }
+}
+
+/* 0-480 */
+@media all and (min-width: 0px) and (max-width: 480px) {
+    .color-coded li {
+        padding-left: 130px;
+    }
+    .color-coded li img {
+        left: 0;
+    }
+    .color-coded li p img {
+        right: 5px;
+    }
+    .color-coded p {
+        font-size: 25px;
+    }
+}
+
+/* 480-767 */
+@media all and (min-width: 480px) and (max-width: 767px) {
+
+}
+
+
