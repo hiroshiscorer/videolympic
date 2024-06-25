@@ -14,7 +14,7 @@ class AtletaController extends Controller
      */
     public function index()
     {
-        $atletas = Atleta::all();
+        $atletas = Atleta::orderBy('nombre')->get();
         return view('atletas', compact('atletas'));
     }
 

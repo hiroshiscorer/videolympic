@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Evento;
 use App\Models\Juego;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class JuegoController extends Controller
 {
@@ -14,7 +15,7 @@ class JuegoController extends Controller
     public function index()
     {
         //
-        $juegos = Juego::where('selected', 1)->orderByDesc('selected')->get();
+        $juegos = Juego::where('selected', 1)->orderBy('nombre')->get();
         return view('juegos', compact('juegos'));
     }
 
@@ -40,9 +41,28 @@ class JuegoController extends Controller
     public function show($juego)
     {
         $juego = Juego::where('nombre', $juego)->first();
-        $eventos = Evento::where('juego_id', $juego->id)
-            ->orderByDesc('score')
-            ->get();
+        switch ($juego->sorting) {
+            case "intAsc":
+            case "signedIntAsc":
+            case "floatAsc":
+            case "timeAsc":
+                $eventos = Evento::where('juego_id', $juego->id)
+                    ->orderByDesc('score')
+                    ->orderBy('resultado')
+                    ->get();
+                break;
+            case "signedIntDesc":
+            case "floatDesc":
+            case "timeDesc":
+            case "intDesc":
+            default:
+                $eventos = Evento::where('juego_id', $juego->id)
+                    ->orderByDesc('score')
+                    ->orderByDesc('resultado')
+                    ->get();
+            break;
+        }
+
         $reglas = explode('|', $juego->reglas);
         return view('juego', compact('juego', 'reglas', 'eventos'));
     }

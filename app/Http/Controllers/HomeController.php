@@ -30,6 +30,7 @@ class HomeController extends Controller
             ->leftJoin('eventos', 'atletas.id', '=', 'eventos.atleta_id')
             ->groupBy('atletas.id')
             ->orderByDesc('score')
+            ->orderBy('nombre')
             ->get();
         $juegos = Juego::orderByDesc('selected')->get();
         return view('home', compact('standings', 'juegos'));

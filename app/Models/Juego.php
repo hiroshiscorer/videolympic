@@ -8,4 +8,16 @@ use Illuminate\Database\Eloquent\Model;
 class Juego extends Model
 {
     use HasFactory;
+    public static function getTypeList() {
+        return [
+            "intAsc",
+            "signedIntAsc",
+            "floatAsc",
+            "timeAsc",
+            "intDesc",
+            "signedIntDesc",
+            "floatDesc",
+            "timeDesc",
+        ];
+    }
 }
