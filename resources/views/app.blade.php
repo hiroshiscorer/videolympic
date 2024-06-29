@@ -56,8 +56,8 @@
                     <nav>
                         <ul>
                             <li><a href="/"><span>Home</span></a></li>
-                            <li><a href="/atletas"><span>Atletas</span></a></li>
-                            <li><a href="/juegos"><span>Juegos</span></a></li>
+                            <li><a href="/athletes"><span>Athletes</span></a></li>
+                            <li><a href="/events"><span>Events</span></a></li>
                             @auth
                             <li class="admin"><a href="/admin"><span>Admin</span></a></li>
                             @endauth
@@ -75,7 +75,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <p class="m-0">Desarrollado por Zynetik Producciones - {{ date("Y") }}</p>
+                <p class="m-0">Developed by Zynetik Producciones - {{ date("Y") }}</p>
             </div>
         </div>
     </div>

@@ -20,4 +20,15 @@ class Juego extends Model
             "timeDesc",
         ];
     }
+
+    /**
+     * @param $id 'JUEGO Model ID'
+     * @return bool
+     * Determines if sorting is of type TIME
+     */
+    public static function isTimeType($id): bool
+    {
+        $type = Juego::find($id)->sorting;
+        return ($type  == "timeDesc" || $type  == "timeAsc");
+    }
 }

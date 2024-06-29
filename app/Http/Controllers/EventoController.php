@@ -36,7 +36,14 @@ class EventoController extends Controller
         $evento->atleta_id = $request->atleta;
         $evento->juego_id = $request->juego;
         $evento->score = $request->score;
-        $evento->resultado = $request->resultado;
+        if (Juego::isTimeType($request->juego)) {
+            list($min, $sec) = explode(':', $request->resultado);
+            $finalTime = (intval($min) * 60) + intval($sec);
+
+            $evento->resultado = $finalTime;
+        } else {
+            $evento->resultado = $request->resultado;
+        }
         $evento->save();
 
         return redirect()
@@ -72,7 +79,14 @@ class EventoController extends Controller
                 $evento->score = $request->score;
                 break;
             case 'resultado':
-                $evento->resultado = $request->resultado;
+                if (Juego::isTimeType($request->juego_id)) {
+                    list($min, $sec) = explode(':', $request->resultado);
+                    $finalTime = (intval($min) * 60) + intval($sec);
+
+                    $evento->resultado = $finalTime;
+                } else {
+                    $evento->resultado = $request->resultado;
+                }
                 break;
         }
         $evento->save();

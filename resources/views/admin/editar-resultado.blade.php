@@ -28,7 +28,7 @@
                                     <input type="hidden" name="type" value="score">
                                     <input type="hidden" name="id" value="{{ $evento->id }}">
                                     <label for="score">Score</label>
-                                    <input id="score" type="number" name="score" step="100" min="100" max="1000" value="{{ $evento->score }}">
+                                    <input id="score" type="number" name="score" step="50" min="0" max="1000" value="{{ $evento->score }}">
                                     <button type="submit">Update</button>
                                 </form>
                             </div>
@@ -37,8 +37,9 @@
                                     @csrf
                                     <input type="hidden" name="type" value="resultado">
                                     <input type="hidden" name="id" value="{{ $evento->id }}">
+                                    <input type="hidden" name="juego_id" value="{{ $evento->juego_id }}">
                                     <label for="resultado">Resultado</label>
-                                    <input id="resultado" type="text" name="resultado" maxlength="255" value="{{ $evento->resultado }}">
+                                    <input id="resultado" type="text" name="resultado" maxlength="255" value="{{ \App\Models\Juego::isTimeType($evento->juego_id) ? sprintf("%02d:%02d", floor($evento->resultado/60), abs($evento->resultado%60)) : $evento->resultado }}">
                                     <button type="submit">Update</button>
                                 </form>
                             </div>

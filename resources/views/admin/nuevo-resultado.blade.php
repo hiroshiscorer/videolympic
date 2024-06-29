@@ -30,7 +30,7 @@
                         </select>
 
                         <label for="score">Score</label>
-                        <input id="score" type="number" name="score" step="100" min="100" max="1000" value="100">
+                        <input id="score" type="number" name="score" step="50" min="0" max="1000" value="0">
 
                         <label for="resultado">Resultado</label>
                         <input id="resultado" type="text" name="resultado" maxlength="255">

@@ -5,19 +5,19 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="title">Juegos</h2>
+                    <h2 class="title">Events</h2>
                     @if(count($juegos))
                     <ul id="juegos-list" class="color-coded">
                     @foreach($juegos as $juego)
                         <li class="{{ $juego->color }}">
-                            <img src="/images/{{$juego->imagen}}" alt="{{ $juego->nombre }}">
+                            <img src="/images/events/{{$juego->imagen ?? 'default.png'}}" alt="{{ $juego->nombre }}">
                             <p>{{ $juego->nombre }}</p>
-                            <a href="/juego/{{ $juego->nombre }}">Ver detalle</a>
+                            <a href="/event/{{ $juego->nombre }}">See detail</a>
                         </li>
                     @endforeach
                     </ul>
                     @else
-                    <p>No hay juegos registrados aún.</p>
+                    <p>No registered events yet.</p>
                     @endif
                 </div>
             </div>

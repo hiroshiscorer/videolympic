@@ -26,7 +26,7 @@ class HomeController extends Controller
     public function index()
     {
         $standings = DB::table('atletas')
-            ->select(DB::raw('atletas.id, nombre, SUM(score) score, imagen, color, atletas.juego_id'))
+            ->select(DB::raw('atletas.id, nombre, integrantes, SUM(score) score, imagen, color, atletas.juego_id'))
             ->leftJoin('eventos', 'atletas.id', '=', 'eventos.atleta_id')
             ->groupBy('atletas.id')
             ->orderByDesc('score')
@@ -37,6 +37,8 @@ class HomeController extends Controller
     }
 
     public function admin() {
-        return view('admin.index');
+        $atletas = Atleta::orderBy('nombre')->get();
+        $juegos = Juego::orderBy('nombre')->get();
+        return view('admin.index', compact('atletas', 'juegos'));
     }
 }

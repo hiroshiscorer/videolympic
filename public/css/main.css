@@ -58,7 +58,37 @@
     --grey-mid: #aaa;
     --grey-light: #fff;
 
+}
 
+span.red {
+    color: var(--red-full);
+}
+span.orange {
+    color: var(--orange-full);
+}
+span.yellow {
+    color: var(--yellow-full);
+}
+span.green {
+    color: var(--green-full);
+}
+span.cyan {
+    color: var(--cyan-full);
+}
+span.blue {
+    color: var(--blue-full);
+}
+span.purple {
+    color: var(--purple-full);
+}
+span.magenta {
+    color: var(--magenta-full);
+}
+span.grey {
+    color: var(--grey-full);
+}
+span.grey {
+    color: var(--grey-light);
 }
 
 div a:focus {
@@ -76,6 +106,10 @@ body {
 
 ul {
 	padding: 0;
+}
+
+ul.bulleted {
+    padding-left: 30px;
 }
 
 img {
@@ -444,6 +478,7 @@ img.skewed {
 }
 
 .color-coded li img {
+    color: transparent;
     clip-path: polygon(40% 0, 100% 0, 60% 100%, 0 100%);
     position: absolute;
     left: 10px;
@@ -508,6 +543,9 @@ img.skewed {
     border-right-width: 0;
 }
 
+.color-coded p.points-right {
+    justify-content: flex-end;
+}
 
 .color-coded li.red {
     background-color: var(--red-back);
@@ -697,7 +735,7 @@ img.skewed {
 }
 
 #single-game-title.single-game li {
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 
 #single-game-title h2 {
@@ -707,8 +745,10 @@ img.skewed {
     font-family: var(--font-display);
     font-size: 60px;
     font-variant: small-caps;
-    flex-basis: 40%;
+    flex-grow: 1;
+    justify-content: space-between;
     position: relative;
+    text-align: right;
     margin: 0;
     height: 160px;
 }
@@ -905,6 +945,60 @@ form button:hover {
     font-size: 30px;
     color: var(--cyan-full);
     border: 1px solid var(--cyan-full);
+}
+
+.admin-home-list li {
+    background-color: #fff2;
+    border-top: 1px solid #fff4;
+    display: flex;
+    gap: 15px;
+}
+
+.admin-home-list li:last-child {
+    border-bottom: 1px solid #fff4;
+}
+
+.admin-home-list > li > a {
+    color: var(--blue-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.admin-home-list > li > a:hover {
+    color: #fff;
+}
+
+.admin-home-list > li > form {
+    flex-basis: 15%;
+    text-align: center;
+    padding: 10px;
+}
+
+.admin-home-list form button.delete {
+    background-color: var(--red-back);
+    border-color: var(--red);
+    color: var(--red-light);
+    height: 30px;
+    line-height: 20px;
+    padding: 0;
+    width: 30px;
+}
+
+.admin-home-list form button.delete:hover {
+    border-color: var(--red-light);
+    box-shadow: 0 0 2px;
+    color: #fff;
+}
+
+.admin-home-list form button.delete i {
+    height: 30px;
+}
+
+.admin-home-list form button.delete i::before {
+    height: 30px;
+    line-height: 30px;
 }
 
 #editar-resultados-list {

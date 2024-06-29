@@ -23,7 +23,7 @@ class AtletaController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.nuevo-atleta');
     }
 
     /**
@@ -31,7 +31,17 @@ class AtletaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        $atleta = new Atleta;
+        $atleta->nombre = $request->nombre;
+        $atleta->integrantes = $request->integrantes;
+        $atleta->imagen = $request->imagen;
+        $atleta->color = $request->color;
+        $atleta->save();
+
+        return redirect()
+            ->route('nuevo-atleta')
+            ->with(['msg' => 'Éxito']);
     }
 
     /**
@@ -50,9 +60,10 @@ class AtletaController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Atleta $atleta)
+    public function edit($atleta)
     {
-        //
+        $atleta = Atleta::where('nombre', $atleta)->first();
+        return view('admin.editar-atletas', compact('atleta'));
     }
 
     /**
@@ -60,14 +71,27 @@ class AtletaController extends Controller
      */
     public function update(Request $request, Atleta $atleta)
     {
-        //
+        $atleta = Atleta::where('id', $request->id)->first();
+        $atleta->nombre = $request->nombre;
+        $atleta->integrantes = $request->integrantes;
+        $atleta->imagen = $request->imagen;
+        $atleta->color = $request->color;
+        $atleta->save();
+
+        return redirect()
+            ->route('admin')
+            ->with(['msg' => 'Éxito']);
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Atleta $atleta)
+    public function destroy(Request $request)
     {
-        //
+        $atleta = Atleta::find($request->id);
+        $atleta->delete();
+        return redirect()
+            ->route('admin')
+            ->with(['msg' => 'Éxito']);
     }
 }

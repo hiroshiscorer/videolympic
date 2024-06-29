@@ -5,20 +5,20 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="title">Atletas</h2>
+                    <h2 class="title">Athletes</h2>
                     @if(count($atletas))
                     <ul id="participants-list" class="color-coded">
                     @foreach($atletas as $atleta)
                         <li class="{{ $atleta->color }}">
-                            <img src="/images/{{$atleta->imagen}}" alt="{{ $atleta->nombre }}">
-                            <p>{{ $atleta->nombre }}</p>
-                            <span>{{ $atleta->Juego->nombre ?? 'Sin juego elegido' }}</span>
-                            <a href="/atleta/{{ $atleta->nombre }}">Ver detalle</a>
+                            <img src="/images/athletes/{{$atleta->imagen ?? "default.png"}}" alt="{{ $atleta->nombre }}">
+                            <p>{{ $atleta->nombre }} <span>{{ $atleta->integrantes }}</span></p>
+
+                            <a href="/athlete/{{ $atleta->nombre }}">See detail</a>
                         </li>
                     @endforeach
                     </ul>
                     @else
-                        <p>No hay atletas registrados aún.</p>
+                        <p>No registered athletes yet.</p>
                     @endif
                 </div>
             </div>
