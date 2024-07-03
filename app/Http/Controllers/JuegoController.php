@@ -74,7 +74,7 @@ class JuegoController extends Controller
                 break;
             case "timeAsc":
                 $eventos = Evento::where('juego_id', $juego->id)
-                    ->orderByRaw('score ASC, CONVERT(resultado, SIGNED) ASC')
+                    ->orderByRaw('score DESC, CONVERT(resultado, SIGNED) ASC')
                     ->get();
                 break;
             case "signedIntDesc":

@@ -35,6 +35,7 @@
                         <li>Once everyone has played, or the deadline has been reached, all players' trials will be sorted and points will be awarded according to the list above.</li>
                         <li>For <span class="orange"> Squadrons</span> you will play at the highest difficulty: <span class="yellow"> <strong> Practice on Ace</strong>, <strong>Fleet Battles on Normal</strong> with no modifiers.</span></li>
                         <li>For <span class="cyan"> XvT</span> you will play with <span class="yellow"><strong>Hard difficulty</strong>, <strong>Randomize OFF</strong>, <strong>Default Mission Time</strong>, and <strong>Craft Collision ON</strong>.</span></li>
+                        <li>All trials must be spectated somehow by at least one other player. For timed events, a recording/VOD is required.</li>
                     </ul>
                     <hr>
                     <h2>Standings</h2>
@@ -47,7 +48,7 @@
                                     <span>{{ $atleta->integrantes }}</span>
                                     <img src="/images/{{ $atleta->integrantes == "" ? 'solo.jpg' : 'duo.jpg'}}" alt="{{ $atleta->integrantes == "" ? 'Solo Athlete' : 'Duo Team'}}" title="{{ $atleta->integrantes == "" ? "Solo Athlete" : "Duo Team"}}"></p>
 
-                                <p><strong>{{ $atleta->score ?? '0' }}</strong> <span>PTS</span></p>
+                                <p class="evento-score"><strong>{{ $atleta->score ?? '0' }}</strong> <span>PTS</span></p>
                             </li>
                         @endforeach
                     </ul>

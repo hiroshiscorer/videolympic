@@ -26,13 +26,13 @@
                         <li style="width: 100%; height: 0;"></li>
                         <li>
                             <a href="nuevo-atleta">
-                                <i class="fa fa-plus"></i>
+                                <i class="fa fa-users"></i>
                                 Nuevo Atleta
                             </a>
                         </li>
                         <li>
                             <a href="nuevo-juego">
-                                <i class="fa fa-pencil"></i>
+                                <i class="fa fa-gamepad"></i>
                                 Nuevo Juego
                             </a>
                         </li>

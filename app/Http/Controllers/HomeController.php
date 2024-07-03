@@ -38,7 +38,7 @@ class HomeController extends Controller
 
     public function admin() {
         $atletas = Atleta::orderBy('nombre')->get();
-        $juegos = Juego::orderBy('nombre')->get();
+        $juegos = Juego::orderBy('id')->get();
         return view('admin.index', compact('atletas', 'juegos'));
     }
 }

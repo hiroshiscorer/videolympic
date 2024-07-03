@@ -3,41 +3,63 @@
     h1 {
         font-size: 40px;
     }
+    h1 span {
+        top: 110px;
+        left: calc(50% - 150px);
+    }
+    .color-coded {
+        gap: 15px;
+    }
     .color-coded li {
         gap: 15px;
-        padding-left: 150px;
+        padding-left: 80px;
         padding-right: 15px;
-        min-height: 100px;
+        min-height: 50px;
     }
     .color-coded li img {
-        left: 15px;
-        top: -10px;
-        width: 120px;
+        left: 5px;
+        top: -5px;
+        width: 60px;
     }
     .color-coded li p img {
-        height: 100px;
-        right: 20px;
-        width: 100px;
+        height: 50px;
+        right: -15px;
+        width: 50px;
     }
-    .color-coded p {
-        font-size: 30px;
-        height: 100px;
+    .color-coded p, #single-game-title h2 {
+        font-size: 15px;
+        height: 50px;
     }
-    .color-coded p::before {
-        left: -25px;
+    .color-coded span, #single-game-title h2 span {
+        font-size: 10px;
+    }
+    .color-coded p::before, #single-game-title h2::before {
+        border-left-width: 1px;
+        border-right-width: 1px;
+        left: -20px;
+        width: 3px;
+    }
+    #standings-table li p:last-child {
+        flex-basis: 10%;
+    }
+    #standings-table li p:last-child::before {
+        left: -5px;
     }
     #standings-table li p:last-child strong {
-        min-width: 50px;
+        min-width: 40px;
     }
-    .color-coded span {
-        font-size: 20px;
+    #standings-table.color-coded p.atleta span {
+        padding-right: 35px;
     }
-    #single-game-title h2 {
-        font-size: 30px;
-        height: 100px;
+    #single-game-title.color-coded p.points-right {
+        flex-basis: 45px;
     }
     .result-list li p.evento-resultado {
-        font-size: 30px;
+        font-size: 20px;
+        padding-right: 5px;
+    }
+    .result-list li p.evento-score {
+        flex-basis: 45px;
     }
     .result-list li p.evento-score::before {
         left: -10px;
@@ -49,8 +71,9 @@
         font-size: 20px;
     }
     .color-coded a {
-        font-size: 14px;
-        flex-basis: 130px;
+        font-size: 11px;
+        flex-basis: 65px;
+        padding: 8px;
     }
     #editar-resultados-list {
         font-size: 14px;
@@ -74,38 +97,68 @@
     h1 {
         font-size: 40px;
     }
+    h1 span {
+        top: 110px;
+        left: 53px;
+    }
+    .color-coded {
+        gap: 30px;
+    }
     .color-coded li {
         gap: 15px;
-        padding-left: 185px;
+        padding-left: 110px;
         padding-right: 15px;
-        min-height: 100px;
+        min-height: 75px;
     }
     .color-coded li img {
         left: 15px;
-        top: -10px;
-        width: 120px;
+        top: -5px;
+        width: 85px;
     }
     .color-coded li p img {
-        height: 100px;
-        right: 20px;
-        width: 100px;
+        height: 75px;
+        right: -2px;
+        width: 75px;
     }
-    .color-coded p {
-        font-size: 30px;
-        height: 100px;
+    .color-coded p, #single-game-title h2 {
+        font-size: 20px;
+        height: 75px;
+    }
+    .color-coded a {
+        font-size: 12px;
+        flex-basis: 90px;
+    }
+    .color-coded span, #single-game-title h2 span {
+        font-size: 15px;
+    }
+    .color-coded p::before, #single-game-title h2::before {
+        border-left-width: 2px;
+        border-right-width: 2px;
+        left: -20px;
+        width: 6px;
+    }
+    #standings-table li p:last-child {
+        flex-basis: 10%;
     }
     #standings-table li p:last-child strong {
         min-width: 50px;
     }
-    .color-coded span {
-        font-size: 20px;
+    #standings-table.color-coded p.atleta span {
+        padding-right: 75px;
+    }
+    #single-game-title.color-coded p.points-right {
+        flex-basis: 20%;
     }
     #single-game-title h2 {
         font-size: 30px;
-        height: 100px;
+        height: 75px;
     }
     .result-list li p.evento-resultado {
-        font-size: 30px;
+        font-size: 20px;
+        padding-right: 15px;
+    }
+    .result-list li p.evento-score {
+        flex-basis: 15%;
     }
     .result-list li p.evento-score::before {
         left: -10px;
@@ -115,10 +168,6 @@
     }
     .home-option-info p, .home-option-info ul {
         font-size: 20px;
-    }
-    .color-coded a {
-        font-size: 14px;
-        flex-basis: 130px;
     }
     #editar-resultados-list {
         font-size: 14px;
@@ -143,24 +192,54 @@
     h1 {
         font-size: 40px;
     }
-
-    .color-coded p {
-        font-size: 30px;
+    h1 span {
+        top: 110px;
+        left: 143px;
     }
-
-    .color-coded span {
+    .color-coded {
+        gap: 45px;
+    }
+    .color-coded li {
+        gap: 15px;
+        padding-left: 185px;
+        padding-right: 15px;
+        min-height: 100px;
+    }
+    .color-coded li img {
+        left: 15px;
+        top: -10px;
+        width: 120px;
+    }
+    .color-coded li p img {
+        height: 100px;
+        right: 20px;
+        width: 100px;
+    }
+    .color-coded p, #single-game-title h2 {
+        font-size: 25px;
+        height: 100px;
+    }
+    .color-coded a {
+        font-size: 14px;
+        flex-basis: 100px;
+    }
+    .color-coded span, #single-game-title h2 span {
         font-size: 20px;
     }
-
     .home-option-info h3 {
         font-size: 30px;
     }
     .home-option-info p, .home-option-info ul {
         font-size: 20px;
     }
-    .color-coded a {
-        font-size: 14px;
-        flex-basis: 130px;
+    #standings-table.color-coded p.atleta span {
+        padding-right: 120px;
+    }
+    #standings-table li p:last-child {
+        flex-basis: 10%;
+    }
+    #standings-table li p:last-child strong {
+        min-width: 50px;
     }
     #editar-resultados-list {
         font-size: 16px;
@@ -168,7 +247,9 @@
     #editar-resultados-list li form button {
         margin-top: 5px;
     }
-
+    .result-list li p.evento-resultado {
+        font-size: 35px;
+    }
 }
 
 /* BOOTSTAP LG */
@@ -176,13 +257,38 @@
     h1 {
         font-size: 60px;
     }
-
-    .color-coded p {
-        font-size: 50px;
+    h1 span {
+        top: 19px;
+        left: 417px;
     }
-
-    .color-coded span {
-        font-size: 25px;
+    .color-coded {
+        gap: 45px;
+    }
+    .color-coded li {
+        gap: 15px;
+        padding-left: 185px;
+        padding-right: 15px;
+        min-height: 100px;
+    }
+    .color-coded li img {
+        left: 15px;
+        top: -10px;
+        width: 120px;
+    }
+    .color-coded li p img {
+        height: 100px;
+        right: 20px;
+        width: 100px;
+    }
+    .color-coded p, #single-game-title h2 {
+        font-size: 30px;
+        height: 100px;
+    }
+    .color-coded a {
+        font-size: 15px;
+    }
+    .color-coded span, #single-game-title h2 span {
+        font-size: 20px;
     }
 
     .home-option-info h3 {
@@ -191,9 +297,20 @@
     .home-option-info p, .home-option-info ul {
         font-size: 20px;
     }
+
     #editar-resultados-list li form button {
         margin-top: 5px;
     }
+    #standings-table li p:last-child {
+        flex-basis: 10%;
+    }
+    #single-game-title h2 {
+        height: 100px;
+    }
+    .result-list li p.evento-resultado {
+        font-size: 35px;
+    }
+
 }
 
 /* ============= EXTRA QUERIES ============= */
@@ -208,29 +325,12 @@
 
 /* 0-767 */
 @media all and (min-width: 0px) and (max-width: 767px) {
-    .home-option-info h3 {
-        font-size: 30px;
-    }
 
-    .home-option-info p, .home-option-info ul {
-        font-size: 20px;
-    }
 }
 
 /* 0-480 */
 @media all and (min-width: 0px) and (max-width: 480px) {
-    .color-coded li {
-        padding-left: 130px;
-    }
-    .color-coded li img {
-        left: 0;
-    }
-    .color-coded li p img {
-        right: 5px;
-    }
-    .color-coded p {
-        font-size: 25px;
-    }
+
 }
 
 /* 480-767 */

@@ -12,6 +12,9 @@
                         </li>
                     </ul>
                     <p class="short-description mtop60 mbot60">{{ $juego->descripcion }}</p>
+                    <p class="start-date"><strong>Starts:</strong> {{ \Carbon\Carbon::createFromFormat("Y-m-d H:i:s", $juego->created_at)->format('l j-M-Y') . ' (' . \Carbon\Carbon::createFromFormat("Y-m-d H:i:s", $juego->created_at) ->diffForHumans().')'  }}</p>
+                    <p class="end-date"><strong>Ends:</strong> {{ \Carbon\Carbon::createFromFormat("Y-m-d H:i:s", $juego->ends_at)->format('l j-M-Y') . ' (' . \Carbon\Carbon::createFromFormat("Y-m-d H:i:s", $juego->ends_at) ->diffForHumans().')' }}</p>
+                    <h3 class="mtop60 mbot">Event Rules</h3>
                     <ul class="rule-list padFixL">
                         @foreach($reglas as $regla)
                             <li>{!! $regla !!}</li>

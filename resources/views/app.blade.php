@@ -43,7 +43,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h1><img src="/images/header-logo.png" alt="Olympic Logo">VideOlympicGames 2024</h1>
+                    <h1><img src="/images/header-logo.png" alt="Olympic Logo"><span>Star Wars</span> videOlympicGames <br class="d-sm-none">2024</h1>
                 </div>
             </div>
         </div>

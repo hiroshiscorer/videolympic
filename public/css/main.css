@@ -334,6 +334,16 @@ h1 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    position: relative;
+}
+
+h1 span {
+    position: absolute;
+    font-size: .4em;
+    color: #ff0;
+    top: 0;
+    left: 402px;
+    text-shadow: 0 0 5px #000, 0 0 5px #000;
 }
 
 h1 img {
@@ -458,6 +468,16 @@ img.skewed {
     flex-grow: 1;
 }
 
+#standings-table.color-coded p.atleta span {
+    flex-grow: 1;
+    padding-right: 160px;
+}
+
+#standings-table.color-coded p.evento-score {
+    gap: 0;
+    justify-content: flex-end;
+}
+
 /* ============================= Atletas ============================= */
 
 .color-coded {
@@ -499,9 +519,11 @@ img.skewed {
     display: flex;
     align-items: center;
     font-family: var(--font-display);
-    font-size: 60px;
+    font-size: 55px;
     font-variant: small-caps;
     flex-basis: 40%;
+    gap: 15px;
+    line-height: 1;
     position: relative;
     margin: 0;
     height: 160px;
@@ -545,6 +567,7 @@ img.skewed {
 
 .color-coded p.points-right {
     justify-content: flex-end;
+    gap: 0;
 }
 
 .color-coded li.red {
@@ -728,6 +751,16 @@ img.skewed {
     border-color: var(--grey-full);
 }
 
+#participants-list.color-coded li p {
+    flex-grow: 1;
+    gap: 15px;
+}
+
+#participants-list.color-coded li p > span {
+    flex-grow: 1;
+}
+
+
 /* ============================= Juegos ============================= */
 
 #juegos-list.color-coded p {
@@ -857,6 +890,7 @@ img.skewed {
 .result-list li p.evento-score {
     justify-content: flex-end;
     flex-basis: 20%;
+    gap: 0;
 }
 
 .result-list li p.evento-score::before {

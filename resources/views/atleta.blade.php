@@ -28,7 +28,7 @@
 											default => '<p class="evento-resultado">'.$evento->resultado.'</p>',
                                     } !!}
 
-                                    <p class="evento-score"><strong>{{ $evento->score }}</strong><span>pts</span></p>
+                                    <p class="evento-score">{{ $evento->score }}<span>pts</span></p>
                                 </li>
                             @endforeach
                         </ul>
