@@ -35,7 +35,16 @@
                         <li>Once everyone has played, or the deadline has been reached, all players' trials will be sorted and points will be awarded according to the list above.</li>
                         <li>For <span class="orange"> Squadrons</span> you will play at the highest difficulty: <span class="yellow"> <strong> Practice on Ace</strong>, <strong>Fleet Battles on Normal</strong> with no modifiers.</span></li>
                         <li>For <span class="cyan"> XvT</span> you will play with <span class="yellow"><strong>Hard difficulty</strong>, <strong>Randomize OFF</strong>, <strong>Default Mission Time</strong>, and <strong>Craft Collision ON</strong>.</span></li>
-                        <li>All trials must be spectated somehow by at least one other player. For timed events, a recording/VOD is required.</li>
+                        <li>All trials must be spectated somehow by at least one other player. For timed events, a recording/VOD is required besides spectators (to double-check times).</li>
+                    </ul>
+                    <hr>
+                    <h2>More details / FAQ</h2>
+                    <ul class="bulleted">
+                        <li>In the case of ties, the score will be awarded equally, even though the system may sort you on top or bottom. That is, in a top 3 tie, there would be 1st, 1st, 1st, and then 4th. So the three top players all get 1000 points, and 4th gets 400.</li>
+                        <li>The race events may have DNF results. In this case, the players who finished the course will be placed on top of all the DNF using the lowest time as winning metric; and then DNF players will be sorted according to who lasted longer before timing out. </li>
+                        <li>Also in races: Ship crashes and deaths do not end your trial. If you manage to resume the course before timing out, it is valid! If not, it is DNF.</li>
+                        <li>DNF players still get ranked and in worst case scenario, get 50 points. No participation in an event (that is, failure to submit a result and/or video) will result in 0 points for that event.</li>
+                        <li>In timed events: The total time will be measured by me. This is why I need VOD/recordings (to calmly make an accurate measurement). Timed events will lack decimal precision, only down to seconds.</li>
                     </ul>
                     <hr>
                     <h2>Standings</h2>
