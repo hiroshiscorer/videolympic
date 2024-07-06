@@ -44,6 +44,7 @@ class EventoController extends Controller
         } else {
             $evento->resultado = $request->resultado;
         }
+        $evento->dnf = $request->dnf === "on" ? 1 : 0;
         $evento->save();
 
         return redirect()
@@ -87,6 +88,7 @@ class EventoController extends Controller
                 } else {
                     $evento->resultado = $request->resultado;
                 }
+                $evento->dnf = $request->dnf === "on" ? 1 : 0;
                 break;
         }
         $evento->save();

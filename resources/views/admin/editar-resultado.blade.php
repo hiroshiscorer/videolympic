@@ -40,7 +40,11 @@
                                     <input type="hidden" name="juego_id" value="{{ $evento->juego_id }}">
                                     <label for="resultado">Resultado</label>
                                     <input id="resultado" type="text" name="resultado" maxlength="255" value="{{ \App\Models\Juego::isTimeType($evento->juego_id) ? sprintf("%02d:%02d", floor($evento->resultado/60), abs($evento->resultado%60)) : $evento->resultado }}">
+                                    <input class="w-auto" type="checkbox" name="dnf" class="dnf" id="dnf{{ $evento->id }}">dnf?
                                     <button type="submit">Update</button>
+                                    <script>
+                                        $('#dnf{{ $evento->id }}').prop('checked', {{ $evento->dnf === 1 }});
+                                    </script>
                                 </form>
                             </div>
                             <div>

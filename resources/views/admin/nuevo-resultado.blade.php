@@ -34,6 +34,9 @@
 
                         <label for="resultado">Resultado</label>
                         <input id="resultado" type="text" name="resultado" maxlength="255">
+
+                        <label for="dnf">DNF?</label>
+                        <input class="w-auto" type="checkbox" name="dnf" id="dnf">
                         <hr>
                         <button type="submit">Enviar</button>
                     </form>

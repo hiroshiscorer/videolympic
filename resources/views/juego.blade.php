@@ -31,7 +31,7 @@
 											"intAsc", "intDesc" => '<p class="evento-resultado">'.number_format($evento->resultado).'</p>',
 											"signedIntAsc", "signedIntDesc" => '<p class="evento-resultado">'.(intval($evento->resultado) < 0 ? '' : '+').number_format($evento->resultado).'</p>',
 											"floatAsc", "floatDesc" => '<p class="evento-resultado">'.number_format(floatval($evento->resultado), 2).'</p>',
-											"timeAsc", "timeDesc" => '<p class="evento-resultado">'.sprintf("%02d:%02d", floor($evento->resultado/60), abs($evento->resultado%60)).'</p>',
+											"timeAsc", "timeDesc" => '<p class="evento-resultado"><span class="dnf">'.($evento->dnf == 1 ? '(DNF)' : '').'</span>'.sprintf("%02d:%02d", floor($evento->resultado/60), abs($evento->resultado%60)).'</p>',
 											default => '<p class="evento-resultado">'.$evento->resultado.'</p>',
                                     } !!}
                                     <p class="evento-score"><strong>{{ $evento->score }}</strong><span>pts</span></p>
