@@ -44,7 +44,7 @@
                         <li>The race events may have DNF results. In this case, the players who finished the course will be placed on top of all the DNF using the lowest time as winning metric; and then DNF players will be sorted according to who lasted longer before timing out. </li>
                         <li>Also in races: Ship crashes and deaths do not end your trial. If you manage to resume the course before timing out, it is valid! If not, it is DNF.</li>
                         <li>DNF players still get ranked and in worst case scenario, get 50 points. No participation in an event (that is, failure to submit a result and/or video) will result in 0 points for that event.</li>
-                        <li>In timed events: The total time will be measured by me. This is why I need VOD/recordings (to calmly make an accurate measurement). Timed events will lack decimal precision, only down to seconds.</li>
+                        <li>In timed race events: The remaining time in the HUD will be taken as the deciding stat. I need VOD/recordings for measuring DNFs (and to measure the speedrun). Timed events will lack decimal precision, only down to seconds.</li>
                     </ul>
                     <hr>
                     <h2>Standings</h2>
