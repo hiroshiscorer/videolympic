@@ -34,7 +34,7 @@
                         <li>Only the best of those two trials will count towards the final score.</li>
                         <li>Once everyone has played, or the deadline has been reached, all players' trials will be sorted and points will be awarded according to the list above.</li>
                         <li>For <span class="orange"> Squadrons</span> you will play at the highest difficulty: <span class="yellow"> <strong> Practice on Ace</strong>, <strong>Fleet Battles on Normal</strong> with no modifiers.</span></li>
-                        <li>For <span class="cyan"> XvT</span> you will play with <span class="yellow"><strong>Hard difficulty</strong>, <strong>Randomize OFF</strong>, <strong>Default Mission Time</strong>, and <strong>Craft Collision ON</strong>.</span></li>
+                        <li>For <span class="cyan"> XvT</span> you will play in <strong>FLY SOLO</strong> with <span class="yellow"><strong>Hard difficulty</strong>, <strong>Randomize OFF</strong>, and <strong>Craft Collision ON</strong>.</span> <strong>Craft waves</strong> setting will vary according to event.</li>
                         <li>All trials must be spectated somehow by at least one other player. For timed events, a recording/VOD is required besides spectators (to double-check times).</li>
                     </ul>
                     <hr>
